@@ -23,7 +23,6 @@ function updateUI(){
     reputation.textContent = `${player.reputation}`;
     counter.textContent = `${player.day}`;
 }
-updateUI();
 const events = [
     {
         title: "💻 Freelance Work",
@@ -95,5 +94,25 @@ function getuniqueEvents(){
     eventTitle.textContent = `${todayevent.title}`;
     eventDescription.textContent = `${todayevent.description}`;
     eventEffect.textContent = `${todayevent.effect}`;
+    if(todayevent.money !== undefined){
+        player.money += todayevent.money;
+    }
+    if(todayevent.health !== undefined){
+        player.health += todayevent.health;
+    }
+    if(todayevent.happiness !== undefined){
+        player.happiness += todayevent.happiness;
+    }
+    if(todayevent.reputation !== undefined){
+        player.reputation += todayevent.reputation;
+    }
+    if(todayevent.knowledge !== undefined){
+        player.knowledge += todayevent.knowledge;
+    }
+    if(todayevent.energy !== undefined){
+        player.energy += todayevent.energy;
+    }
+    
 }
 getuniqueEvents();
+updateUI();
