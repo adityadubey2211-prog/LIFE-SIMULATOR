@@ -7,7 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section class="main">
+        <section class="header">
+            <div class="title">
+                <h1>LIFE SIMULATOR</h1>
+                <h3>YOUR 30 DAYS</h3>
+            </div>
+            <div class="controls">
+                <button class="New-game">NEW GAME</button>
+                <button class="save-game">SAVE GAME</button>
+            </div>
+        </section>
+        <section class="day-counter">
+            <div class="days">📅 <div class="day">0</div>/30</div>
+            <div class="text">"Build your life. Choose wisely."</div>
+        </section>
+        <section class="stats-section">
+            <div class="stat-card">
+                <h1>💰  MONEY</h1>
+                <span id="money">5,000</span>
+                <h5 class="lable">CURRENT bALANCE</h5>
+            </div>
+            <div class="stat-card">
+                <h1>⚡ ENERGY</h1>
+                <span id="energy">50</span>
+                <h5 class="lable">Available Energy</h5>
+            </div>
+            <div class="stat-card">
+                <h1>🧠 KNOWLEDGE</h1>
+                <span id="knowledge">10</span>
+                <h5 class="lable">Knowledge Points</h5>
+            </div>
+            <div class="stat-card">
+                <h1>😊 HAPPINESS</h1>
+                <span id="happiness">50</span>
+                <h5 class="lable">Happiness Points</h5>
+            </div>
+            <div class="stat-card">
+               <h1>💪 HEALTH</h1>
+               <span id="health">50</span>
+               <h5 class="lable">Health Points</h5>
+            </div>
+            <div class="stat-card">
+                <h1>⭐ REPUTATION</h1>
+                <span id="reputation">0</span>
+                <h5 class="lable">Reputation Points</h5>
+            </div>
+        </section>
+        <section class="today-event">
+            <h1>Today's event</h1>
+            <p id="event-title">💻 Freelance Opportunity </p>
+            <p id="event-description">You found a freelance client!</p>
+            <span id="event-effect"> +2,000 </span>
+        </section>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
